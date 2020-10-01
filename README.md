@@ -1,6 +1,7 @@
 # drf-api-deploy
 
 ## in the terminal
+
 - mkdir 'some folder name'
 - cd 'some folder name '
 - poetry init -n
@@ -28,7 +29,11 @@
         ALLOWED_HOSTS=localhost,127.0.0.1
         
 ---
+
+## Project
+
 - projct/settings.py
+
                 import os
 
                 env = environ.Env(
@@ -98,6 +103,9 @@
                   ]
                   
 ---
+
+## APP
+
 - app/admin.py
 
                 from django.contrib import admin
@@ -178,6 +186,8 @@
                                             queryset = Python.objects.all()
                                             serializer_class = PythonSerializer
 ---
+
+## ROOT
 
 - docker-compose.yml
 
