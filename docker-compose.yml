@@ -3,15 +3,19 @@ services:
     web:
         build: .
         # command: python manage.py runserver 0.0.0.0:8000
-        command: gunicorn programs.wsgi:application --bind 0.0.0.0:8007 --workers 4
+        command: gunicorn programs.wsgi:application --bind 0.0.0.0:8009 --workers 4
         volumes:
             - .:/code
         ports:
-            - "8007:8007"
+            - "8009:8009"
 
         depends_on:
             - db
+            # links:
+            #     - db:db
     db:
         image: postgres:11
+        ports:
+            - '5432'
         environment:
             - "POSTGRES_HOST_AUTH_METHOD=trust"
