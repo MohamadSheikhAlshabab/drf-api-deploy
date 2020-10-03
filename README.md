@@ -19,15 +19,15 @@
 - docker-compose exec web python manage.py migrate
 ---
 - project/sample.py
-        DEBUG=on
-        SECRET_KEY=cg8=^m)dp74_(42r!hhr6x)umzo^ted#+%2*)6r=_-e31evy3v
-        DATABASE_NAME=postgres
-        DATABASE_USER=postgres
-        DATABASE_PASSWORD=put-real-db-password-here
-        DATABASE_HOST=db
-        DATABASE_PORT=5432
-        ALLOWED_HOSTS=localhost,127.0.0.1
-        
+                                DEBUG=on
+                                SECRET_KEY=cg8=^m)dp74_(42r!hhr6x)umzo^ted#+%2*)6r=_-e31evy3v
+                                DATABASE_NAME=postgres
+                                DATABASE_USER=postgres
+                                DATABASE_PASSWORD=put-real-db-password-here
+                                DATABASE_HOST=db
+                                DATABASE_PORT=5432
+                                ALLOWED_HOSTS=localhost,127.0.0.1
+
 ---
 
 ## Project
