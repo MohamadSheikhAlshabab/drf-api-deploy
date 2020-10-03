@@ -19,6 +19,7 @@
 - docker-compose exec web python manage.py migrate
 ---
 - project/sample.py
+
                                 DEBUG=on
                                 SECRET_KEY=cg8=^m)dp74_(42r!hhr6x)umzo^ted#+%2*)6r=_-e31evy3v
                                 DATABASE_NAME=postgres
